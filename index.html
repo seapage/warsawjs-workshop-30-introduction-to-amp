@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Workshop Warsaw.Js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>
+    <script src="./js/simpleparallax.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="content">
+            <h1>
+                <a href="#">
+                    <img src="./images/logo.svg" alt="WarsawJs">
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Warsztaty
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            O nas
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Blog
+                        </a>
+                    </li>
+                </ul>
+                <div id="searchBox">
+                    <input type="text" placeholder="Search">
+                </div>
+                <button id="search">
+                    <i class="fas fa-search"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <div class="slider">
+        <div>
+            <img src="./images/1S2A6957_v1.jpg" alt="">
+        </div>
+        <div>
+            <img src="./images/IMG_4792.jpg" alt="">
+        </div>
+        <div>
+            <img src="./images/IMG_5578.jpg" alt="">
+        </div>
+    </div>
+    <section id="firstSection">
+        <div class="content">
+            <h2>
+                Nadchodzące wydarzenia
+            </h2>
+
+            <div id="tabs">
+                <ul>
+                    <li data-tab="first_tab" class="active">
+                        Marzec
+                    </li>
+                    <li data-tab="second_tab">
+                        Kwiecień
+                    </li>
+                    <li data-tab="third_tab">
+                        Maj
+                    </li>
+                </ul>
+                <div data-tab="first_tab" class="active">
+                    <h3>
+                        Różnica między java a javascript
+                    </h3>
+                    <p>
+                        Etiam sagittis arcu sodales rhoncus tempus. Maecenas eget consequat felis. Quisque lectus magna, porttitor a sapien vel, imperdiet pharetra sem. Sed at lorem nisi. Ut malesuada, libero vitae euismod dignissim, sem est condimentum dolor, ac fringilla elit elit eu risus. Mauris faucibus imperdiet fringilla. Etiam nisi dolor, vestibulum at suscipit sed, blandit
+                </div>
+                <div data-tab="second_tab">
+                    <h3>
+                        Czym się różni zmienna od stałej
+                    </h3>
+                    <p>
+                        uada, libero vitae euismod dignissim, sem est condimentum dolor, ac fringilla elit elit eu risus. Mauris faucibus imperdiet fringilla. Etiam nisi dolor, vestibulum at suscipit sed, blandit eu nibh. Aliquam placerat euismod purus, in sollicitudin mauris tincidunt nec. Nunc viverra sollicitudin sem in tristique. Phasellus malesuada mi nec lorem rut
+                    </p>
+                </div>
+                <div data-tab="third_tab">
+                    <h3>
+                        Programowanie funkcyjne
+                    </h3>
+                    <p>
+                        dit eu nibh. Aliquam placerat euismod purus, in sollicitudin mauris tincidunt nec. Nunc viverra sollicitudin sem in tristique. Phasellus malesuada mi nec lorem rutrum pharetra. Curabitur id venenatis dolor, et ultricies est. Integer ultrices et nulla et consectetur. Nam finibus gravida ex, ut fermentum urna aliquet eget.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <img class="thumbnail" src="./images/io-photo.jpg" alt="image">
+    <section>
+        <div class="content">
+            <h2>
+                Dodatkowe informacje
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi culpa hic laborum necessitatibus quia sequi ullam? Ad alias asperiores delectus incidunt nostrum quas tempora tenetur totam! Atque, ipsa repellat!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi culpa hic laborum necessitatibus quia sequi ullam? Ad alias asperiores delectus incidunt nostrum quas tempora tenetur totam! Atque, ipsa repellat!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi culpa hic laborum necessitatibus quia sequi ullam? Ad alias asperiores delectus incidunt nostrum quas tempora tenetur totam! Atque, ipsa repellat!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi culpa hic laborum necessitatibus quia sequi ullam? Ad alias asperiores delectus incidunt nostrum quas tempora tenetur totam! Atque, ipsa repellat!
+            </p>
+        </div>
+    </section>
+    <footer>
+        <h2>Znajdź nas na social</h2>
+        <ul id="socialMenu">
+            <li>
+                <a class="facebook" href=""></a>
+            </li>
+            <li>
+                <a class="instagram" href=""></a>
+            </li>
+            <li>
+                <a class="linkedin" href=""></a>
+            </li>
+        </ul>
+    </footer>
+    <script>
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                pager: false,
+                auto: true
+            });
+
+            $("#facebook img").click(function () {
+                if($("#facebook").hasClass("active")){
+                    $("#facebook").animate({
+                        right: -340
+                    })
+                }else{
+                    $("#facebook").animate({
+                        right: 0
+                    })
+                }
+                $("#facebook").toggleClass("active")
+            })
+
+            $("#tabs li").click(function () {
+                console.log("test")
+                var className = $(this).attr('data-tab')
+                $("#tabs li").removeClass('active')
+                $(this).addClass("active")
+                $("#tabs div").removeClass('active')
+                $("#tabs div").filter("[data-tab="+className+"]").addClass('active')
+            })
+
+
+
+            var image = document.getElementsByClassName('thumbnail');
+            new simpleParallax(image);
+        });
+    </script>
+    <div id="facebook">
+        <img src="./images/facebookButton.png" alt="">
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fwarsawjs%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=305015200076897" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    </div>
+</body>
+
+</html>
