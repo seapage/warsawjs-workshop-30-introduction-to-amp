@@ -22,16 +22,31 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="172" column="13" selection-start-line="172" selection-start-column="13" selection-end-line="172" selection-end-column="13" />
+            <state relative-caret-position="-649">
+              <caret line="111" column="10" selection-start-line="111" selection-start-column="10" selection-end-line="111" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/1S2A6957_v1.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/images/IMG_4792.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/io-photo.jpg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -57,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="488">
-              <caret line="302" column="1" selection-start-line="302" selection-start-column="1" selection-end-line="302" selection-end-column="1" />
+              <caret line="302" column="1" lean-forward="true" selection-start-line="302" selection-start-column="1" selection-end-line="302" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -67,6 +82,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>section</find>
+      <find>simpleParallax</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -99,6 +115,11 @@
             <path>
               <item name="workshop-warsawjs-amp-page" type="b2602c69:ProjectViewProjectNode" />
               <item name="workshop-warsawjs-amp-page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="workshop-warsawjs-amp-page" type="b2602c69:ProjectViewProjectNode" />
+              <item name="workshop-warsawjs-amp-page" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -158,19 +179,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7034000" />
+    <option name="totallyTimeSpent" value="7365000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24969475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32959184" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -178,10 +194,14 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Remote Host" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32959184" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,9 +209,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/images/logo.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/IMG_4792.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/images/facebookButton.png">
@@ -223,19 +240,25 @@
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
-          <caret line="302" column="1" selection-start-line="302" selection-start-column="1" selection-end-line="302" selection-end-column="1" />
+          <caret line="302" column="1" lean-forward="true" selection-start-line="302" selection-start-column="1" selection-end-line="302" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="172" column="13" selection-start-line="172" selection-start-column="13" selection-end-line="172" selection-end-column="13" />
+        <state relative-caret-position="-649">
+          <caret line="111" column="10" selection-start-line="111" selection-start-column="10" selection-end-line="111" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#iframe#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/1S2A6957_v1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/IMG_4792.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>
