@@ -14,9 +14,7 @@
 
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/jquery.bxslider.css">
     <script src="./js/jquery.js"></script>
-    <script src="./js/jquery.bxslider.js"></script>
     <script src="./js/simpleparallax.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin-ext" rel="stylesheet">
@@ -382,6 +380,7 @@
         }
     </style>
 
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
 </head>
 
@@ -429,17 +428,31 @@
             </nav>
         </div>
     </header>
-    <div class="slider">
-        <div>
-            <img src="./images/1S2A6957_v1.jpg" alt="">
-        </div>
-        <div>
-            <img src="./images/IMG_4792.jpg" alt="">
-        </div>
-        <div>
-            <img src="./images/IMG_5578.jpg" alt="">
-        </div>
-    </div>
+    <amp-carousel
+            type="slides"
+            width="1920"
+            height="500"
+            layout="responsive"
+            autoplay
+            delay="2000"
+            loop>
+
+        <amp-img src="./images/1S2A6957_v1.jpg"
+                 width="1920"
+                 height="500"
+                 layout="responsive"
+                 alt=""></amp-img>
+        <amp-img src="./images/IMG_4792.jpg"
+                 width="1920"
+                 height="500"
+                 layout="responsive"
+                 alt=""></amp-img>
+        <amp-img src="./images/IMG_5578.jpg"
+                 width="1920"
+                 height="500"
+                 layout="responsive"
+                 alt=""></amp-img>
+    </amp-carousel>
     <section id="firstSection">
         <div class="content">
             <h2>
