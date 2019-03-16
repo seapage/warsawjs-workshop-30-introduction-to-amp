@@ -258,12 +258,44 @@ footer h2{
 #socialMenu li a.linkedin{
     background: url(./images/linkedin.png) no-repeat center center;
 }
+.three-column{
+    display: flex;
+    flex-wrap: wrap;
+}
+.three-column>div{
+    width: 33%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.three-column>div img{
+    width: 100%;
+    height: 230px;
+}
+.three-column>div h5{
+    padding: 10px 0;
+    font-size: 20px;
+}
+.contenerParallax{
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+.thumbnail{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    /*will-change: transform;*/
+}
 @media (max-width: 1000px){
     #searchBox, #search{
         display: none;
     }
 }
 @media (max-width: 768px){
+    .three-column>div{
+        width: 100%;
+    }
     #facebook img{
         width: 50px;
         left: -50px;
