@@ -335,6 +335,14 @@
             left: 0
         }
         /*end checkbox trick*/
+
+        /*parallax*/
+        .parallax-image-window{
+            height: 400px;
+            overflow: hidden;
+        }
+        /*end parallax*/
+
         @media (max-width: 1000px){
             #searchBox, #search{
                 display: none;
@@ -348,8 +356,8 @@
             section p{
                 font-size: 16px;
             }
-            .simpleParallax{
-                height: 350px;
+            .parallax-image-window{
+                height: 300px;
             }
         }
         @media (max-width: 550px){
@@ -381,6 +389,7 @@
     </style>
 
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
 </head>
 
@@ -505,7 +514,14 @@
             </div>
         </div>
     </section>
-    <img class="thumbnail" src="./images/io-photo.jpg" alt="image">
+    <div class="parallax-image-window">
+        <amp-img amp-fx="parallax"
+                 data-parallax-factor="1.15"
+                 width="2971"
+                 height="900"
+                 layout="responsive"
+                 src="./images/io-photo.jpg"></amp-img>
+    </div>
     <section>
         <div class="content">
             <h2>
