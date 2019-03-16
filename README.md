@@ -1,4 +1,4 @@
-# WarsawJs workshop - Accelerated mobile pages "AMP"
+# WarsawJS workshop - Accelerated mobile pages "AMP"
 
 Na branchu `master` znajduje się niezoptymalizowana strona. Posiada ona kilka problemów,
 które warto byłoby zneutralizować. Przez cały warsztat zajmiemy się przerobieniem
