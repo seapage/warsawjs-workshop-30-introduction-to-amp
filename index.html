@@ -20,6 +20,310 @@
     <script src="./js/jquery.bxslider.js"></script>
     <script src="./js/simpleparallax.js"></script>
 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin-ext" rel="stylesheet">
+    <style amp-custom>
+        /*believe in God not in this code*/
+
+        /* to ukradłem z http://html5doctor.com/html-5-reset-stylesheet/ */
+        html, body, div, span, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        abbr, address, cite, code,
+        del, dfn, em, img, ins, kbd, q, samp,
+        small, strong, sub, sup, var,
+        b, i,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section, summary,
+        time, mark, audio, video {
+            margin:0;
+            padding:0;
+            border:0;
+            outline:0;
+            font-size:100%;
+            vertical-align:baseline;
+            background:transparent;
+        }
+
+        body {
+            line-height:1;
+            overflow-x: hidden;
+        }
+
+        article,aside,details,figcaption,figure,
+        footer,header,hgroup,menu,nav,section {
+            display:block;
+        }
+
+        nav ul {
+            list-style:none;
+        }
+
+        blockquote, q {
+            quotes:none;
+        }
+
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content:'';
+            content:none;
+        }
+
+        a {
+            margin:0;
+            padding:0;
+            font-size:100%;
+            vertical-align:baseline;
+            background:transparent;
+        }
+
+        /* change colours to suit your needs */
+        ins {
+            background-color:#ff9;
+            color:#000;
+            text-decoration:none;
+        }
+
+        /* change colours to suit your needs */
+        mark {
+            background-color:#ff9;
+            color:#000;
+            font-style:italic;
+            font-weight:bold;
+        }
+
+        del {
+            text-decoration: line-through;
+        }
+
+        abbr[title], dfn[title] {
+            border-bottom:1px dotted;
+            cursor:help;
+        }
+
+        table {
+            border-collapse:collapse;
+            border-spacing:0;
+        }
+
+        /* change border colour to suit your needs */
+        hr {
+            display:block;
+            height:1px;
+            border:0;
+            border-top:1px solid #cccccc;
+            margin:1em 0;
+            padding:0;
+        }
+
+        input, select {
+            vertical-align:middle;
+        }
+
+
+        /* custom css */
+        html{
+            overflow-x: hidden;
+        }
+        body{
+            font-family: 'Open Sans', sans-serif;
+            position: relative;
+        }
+        .content{
+            margin: 0 auto;
+            width: 90%;
+            max-width: 1300px;
+        }
+        header{
+            padding: 10px;
+            border-bottom: 4px solid #F72F2F;
+        }
+        header .content{
+            display: flex;
+        }
+        header .content h1{
+            width: 100px;
+        }
+        header .content h1 img{
+            max-width: 100%;
+        }
+        header .content nav{
+            width: calc(100% - 100px);
+            padding: 40px 50px 0px 20px;
+            box-sizing: border-box;
+        }
+        header .content nav ul{
+            display: inline-block;
+        }
+        header .content nav li{
+            list-style: none;
+            display: inline-block;
+            margin-right: 20px;
+        }
+        header .content nav li a{
+            display: inline-block;
+            color: #000;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        header .content button{
+            width: 40px;
+            height: 40px;
+            color: #fff;
+            border: 0;
+            background: #F72F2F;
+            border-radius: 50%;
+        }
+        #searchBox{
+            display: inline-block;
+        }
+        #searchBox input{
+            border: 0;
+            width: 200px;
+            border-bottom: 1px solid #cccccc;
+        }
+        .bx-wrapper{
+            border: 0!important;
+        }
+        .slider img{
+            width: 100%;
+        }
+        section{
+            padding: 40px;
+        }
+        section h2{
+            text-align: center;
+            width: 100%;
+            font-size: 50px;
+            font-weight: normal;
+            margin-bottom: 30px;
+        }
+        section p{
+            font-size: 20px;
+            line-height: 1.4em;
+        }
+        #facebook{
+            position: absolute;
+            right: -340px;
+            top: 40px;
+        }
+        #facebook img{
+            position: absolute;
+            left: -100px;
+            cursor: pointer;
+            top: 0;
+        }
+        #facebook.active{
+            right: 0;
+        }
+        #tabs div{
+            display: none;
+        }
+        #tabs div.active{
+            display: block;
+        }
+        #tabs ul{
+            display: flex;
+            list-style: none;
+        }
+        #tabs ul li{
+            width: 33.3%;
+            text-align: center;
+            color: #fff;
+            background: #F72F2F;
+            padding: 20px;
+        }
+        #tabs div{
+            padding: 20px;
+            border: 1px solid #cccccc;
+            font-size: 18px;
+            line-height: 1.5em;
+        }
+        #tabs div h3{
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+        #tabs li.active{
+            background: #a89797;
+        }
+        .simpleParallax{
+            height: 600px;
+        }
+        #socialMenu{
+            text-align: center;
+            width: 100%;
+            list-style: none;
+        }
+        #socialMenu li{
+            display: inline-block;
+        }
+        #socialMenu li a{
+            width: 128px;
+            height: 128px;
+            display: block;
+        }
+        footer{
+            padding-bottom: 40px;
+        }
+        footer h2{
+            text-align: center;
+            font-size: 22px;
+            margin: 30px 0 20px;
+        }
+        #socialMenu li a.facebook{
+            background: url(./images/facebook.png) no-repeat center center;
+        }
+        #socialMenu li a.instagram{
+            background: url(./images/instagram.png) no-repeat center center;
+        }
+        #socialMenu li a.linkedin{
+            background: url(./images/linkedin.png) no-repeat center center;
+        }
+        @media (max-width: 1000px){
+            #searchBox, #search{
+                display: none;
+            }
+        }
+        @media (max-width: 768px){
+            #facebook img{
+                width: 50px;
+                left: -50px;
+            }
+            section p{
+                font-size: 16px;
+            }
+            .simpleParallax{
+                height: 350px;
+            }
+        }
+        @media (max-width: 550px){
+            header .content{
+                display: block;
+            }
+            header .content nav {
+                width: calc(100%);
+                padding: 5px 18px;
+                box-sizing: border-box;
+            }
+            section#firstSection{
+                padding-top: 0;
+            }
+            section h2{
+                font-size: 30px;
+            }
+            header .content nav li a{
+                font-size: 18px;
+            }
+        }
+        @media (max-width: 450px){
+            #socialMenu li a{
+                width: 60px;
+                height: 60px;
+                background-size: 60px 60px!important;
+            }
+        }
+    </style>
 
     <script async src="https://cdn.ampproject.org/v0.js"></script>
 </head>
