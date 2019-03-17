@@ -207,7 +207,19 @@
         #tabs div{
             display: none;
         }
-        #tabs div.active{
+        #tabs input{display: none}
+        input#first_tab:checked ~ ul li[data-tab="first_tab"]{
+            background: #a89797;
+        }
+        input#second_tab:checked ~ ul li[data-tab="second_tab"]{
+            background: #a89797;
+        }
+        input#third_tab:checked ~ ul li[data-tab="third_tab"]{
+            background: #a89797;
+        }
+        input#first_tab:checked ~ div[data-tab="first_tab"],
+        input#second_tab:checked ~ div[data-tab="second_tab"],
+        input#third_tab:checked ~ div[data-tab="third_tab"]{
             display: block;
         }
         #tabs ul{
@@ -219,6 +231,9 @@
             text-align: center;
             color: #fff;
             background: #F72F2F;
+        }
+        #tabs ul li label{
+            display: block;
             padding: 20px;
         }
         #tabs div{
@@ -408,15 +423,24 @@
         </h2>
 
         <div id="tabs">
+            <input id="first_tab" checked type="radio" name="tab">
+            <input id="second_tab" type="radio" name="tab">
+            <input id="third_tab" type="radio" name="tab">
             <ul>
-                <li data-tab="first_tab" class="active">
-                    Marzec
+                <li data-tab="first_tab">
+                    <label for="first_tab">
+                        Marzec
+                    </label>
                 </li>
                 <li data-tab="second_tab">
-                    Kwiecień
+                    <label for="second_tab">
+                        Kwiecień
+                    </label>
                 </li>
                 <li data-tab="third_tab">
-                    Maj
+                    <label for="third_tab">
+                        Maj
+                    </label>
                 </li>
             </ul>
             <div data-tab="first_tab" class="active">
@@ -658,14 +682,6 @@
             $("#facebook").toggleClass("active")
         })
 
-        $("#tabs li").click(function () {
-            console.log("test")
-            var className = $(this).attr('data-tab')
-            $("#tabs li").removeClass('active')
-            $(this).addClass("active")
-            $("#tabs div").removeClass('active')
-            $("#tabs div").filter("[data-tab="+className+"]").addClass('active')
-        })
 
 
         $(window).scroll(function slide1(e) {
